@@ -21,14 +21,14 @@ public class Main {
         }
         size = scn.nextInt();
 
-        if (!checkCorrectnessOfNumber(size)) {
+        if (!isNumberCorrect(size)) {
             return readSize();
         }
 
         return size;
     }
 
-    private static boolean checkCorrectnessOfNumber(int size) {
+    private static boolean isNumberCorrect(int size) {
         if (size < 3) {
             System.out.println("Error! The number must be at least 3. Please, try again...");
             return false;
